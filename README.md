@@ -1,4 +1,4 @@
-# [saumya.lol](https://saumya.lol)
+# [saums.me](https://saums.me)
 
 ## Stack
 
@@ -10,8 +10,8 @@
 This application requires `Node.JS` to run.
 
 ```zsh
-git clone https://github.com/27Saumya/saumya.lol
-cd saumya.lol
+git clone https://github.com/27Saumya/saums.me
+cd saums.me
 npm i
 ```
 
