@@ -75,7 +75,7 @@
         <i class="fa fa-download" />&nbsp; Download
       </div>
     </a>
-    <a href="https://github.com/27Saumya/Macboard" target="_blank">
+    <a href="https://github.com/saumsy/Macboard" target="_blank">
       <div
         class="Poppins poppingButton mb-2 me-3 cursor-pointer rounded-2xl border-2 border-violet-600 px-5 py-2 text-center text-lg font-bold text-white hover:bg-gradient-to-br focus:outline-none focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-800"
       >

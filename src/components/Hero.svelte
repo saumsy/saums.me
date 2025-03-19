@@ -47,26 +47,26 @@
       title: "Localizer",
       description: "A CLI tool that helps you localize your applications efficiently",
       image: "project-assets/localizer.png",
-      link: "https://github.com/27Saumya/localizer"
+      link: "https://github.com/saumsy/localizer"
     },
     {
       title: "Lines Tally",
       description: "An elegant CLI tool that returns the number of lines of code in a directory",
       image: "project-assets/lines-tally.png",
-      link: "https://github.com/27Saumya/lines-tally"
+      link: "https://github.com/saumsy/lines-tally"
     },
     {
       title: "Create Discord Bot",
       description: "A blazingly fast 🚀 CLI tool for quickly creating Discord Bot boilerplates",
       image: "project-assets/create-discord-bot.png",
-      link: "https://github.com/27Saumya/create-discord-bot"
+      link: "https://github.com/saumsy/create-discord-bot"
     },
     {
       title: "Hangdev",
       description:
         "A CLI game inspired from Hangman made for developers to play right in their computer shell!",
       image: "project-assets/hangdev.png",
-      link: "https://github.com/27Saumya/hangdev"
+      link: "https://github.com/saumsy/hangdev"
     }
   ];
 

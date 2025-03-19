@@ -4,7 +4,7 @@
   <span class="text-sm font-light">&copy; Saumya &bull; 2024 - All rights reserved</span>
   <div class="flex items-center gap-4 sm:flex-wrap sm:justify-end">
     <a
-      href="https://github.com/27Saumya"
+      href="https://github.com/saumsy"
       target="_blank"
       class="duration-200 hover:scale-150 hover:text-violet-400"
     >

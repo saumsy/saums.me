@@ -10,7 +10,7 @@
 This application requires `Node.JS` to run.
 
 ```zsh
-git clone https://github.com/27Saumya/saums.me
+git clone https://github.com/saumsy/saums.me
 cd saums.me
 npm i
 ```
