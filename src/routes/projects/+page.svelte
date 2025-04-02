@@ -13,7 +13,7 @@
     {
       title: "cricket guru",
       description:
-        "relive your favorite sport through the best cricket bot on discord with 33k+ users & 14k+ servers (co-developer)",
+        "relive your favorite sport through the best cricket bot on discord with 44k+ users & 19k+ servers (co-developer)",
       link: "https://cricketguru.pro",
       role: "co-developer",
       tech: ["python", "discord.py", "mongodb"]
@@ -63,14 +63,16 @@
 
   <p class="mb-8 font-mono text-gray-500">
     here are some of the projects i've worked on. i love building stuff that fixes problems and
-    makes everyone's lives easier. also i consider projects as a source of learning new things.
+    makes poeple's lives easier, while considering them as a source of learning new things.
   </p>
 
   {#each projects as project}
     <Card classes="mb-6 group">
       <div class="flex justify-between">
-        <a href={project.link} target="_blank" class="text-xl group-hover:text-accent"
-          >{project.title}</a
+        <a
+          href={project.link}
+          target="_blank"
+          class="text-xl hover:underline group-hover:text-accent">{project.title}</a
         >
         <a href={project.link} target="_blank" class="text-sm hover:text-accent">
           <MoveUpRight class="size-4" />
