@@ -3,7 +3,13 @@
 export default {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        accent: "#6A5ACD",
+        darkbg: "#121212",
+        darkcard: "#1E1E1E"
+      }
+    }
   },
   plugins: []
 };

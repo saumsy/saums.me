@@ -3,124 +3,114 @@
 
   let features: {
     title: string;
-    description: string;
     image: string;
   }[] = [
     {
-      title: "CLEAN UI",
-      description:
-        "What is important for an app to be classified as a minimal one? Undoubtebly the UI, and likewise Macboard has a very clean UI for the best user experience!",
+      title: "clean ui",
       image: "project-assets/sidebar.svg"
     },
     {
-      title: "LIGHTWEIGHT",
-      description:
-        "Experience unparalleled speed and efficiency with the lightweight design, ensuring smooth performance even on resource-constrained devices.",
+      title: "lightweight",
       image: "project-assets/feather.svg"
     },
     {
-      title: "DETAILS",
-      description:
-        "Get details for any and everything you copy, Macboard offers users to view the time since something was copied, the app from which it was copied and even URL previews!",
+      title: "details",
       image: "project-assets/info.svg"
     },
     {
-      title: "KEYBOARD CONTROL",
-      description:
-        "Take full control of your workflow with intuitive keyboard shortcuts and navigation, allowing you to accomplish tasks with minimal hand movement.",
+      title: "keyboard control",
       image: "project-assets/keyboard.svg"
     },
     {
-      title: "SECURE & PRIVATE",
-      description:
-        "Macboard respects your privacy and security the most. You don't have to worry about your data, all of this is stored right on your computer. Also, you have full control over what you get.",
+      title: "secure & private",
       image: "project-assets/lock.svg"
     },
     {
-      title: "OPEN SOURCE",
-      description:
-        "Macboard is completely open source! Meaning, you know about what you get, there's nothing to hide. This also makes updates quite more often!",
+      title: "open source",
       image: "project-assets/github.svg"
     }
   ];
 </script>
 
 <svelte:head>
-  <title>Macboard</title>
-  <meta property="og:title" content="Macboard" />
-  <meta property="og:description" content="A minimalistic clipboard manager for macOS" />
+  <title>macboard | saums</title>
+  <meta property="og:title" content="macboard | saums" />
+  <meta property="og:description" content="a minimalistic clipboard manager for macos" />
   <meta property="og:image" content="https://saums.me/project-assets/macboard-full.png" />
   <meta property="twitter:image" content="https://saums.me/project-assets/macboard-full.png" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#6A5ACD" />
 </svelte:head>
 
-<main class="mt-[-12px] flex flex-1 flex-col p-4">
-  <section class="flex flex-wrap items-center justify-center py-8 sm:py-14">
-    <img src="project-assets/macboard.png" alt="Macboard Logo" class="mr-4 h-32 w-32" />
-    <div class="text-center md:text-left">
-      <h3 class="text-4xl font-semibold sm:text-5xl md:text-6xl">
-        <span class="gradientText">Macboard</span>
-      </h3>
-      <p class="sm:text-large mt-3 md:text-xl">
-        A <span class="gradientText">minimalistic</span> clipboard manager for macOS
+<main>
+  <h1 class="mb-8 flex items-center gap-2 font-mono text-3xl text-accent before:content-['*']">
+    macboard
+  </h1>
+
+  <section class="mb-12 flex flex-col items-center gap-6 md:flex-row">
+    <img src="project-assets/macboard.png" alt="macboard logo" class="h-32 w-32" />
+    <div>
+      <p class="mb-6 text-xl text-gray-300">
+        a <span class="text-accent">minimalistic</span> clipboard manager for macos
+      </p>
+
+      <div class="flex flex-wrap gap-4">
+        <a href="/download/Macboard.dmg" download>
+          <button
+            class="rounded-md bg-accent/90 px-4 py-2 font-mono text-white transition-colors hover:bg-accent"
+          >
+            <i class="fa fa-download"></i> download
+          </button>
+        </a>
+        <a href="https://github.com/saumsy/Macboard" target="_blank">
+          <button
+            class="rounded-md border border-accent/60 px-4 py-2 font-mono text-white transition-colors hover:border-accent"
+          >
+            <i class="fa fa-github"></i> github
+          </button>
+        </a>
+      </div>
+
+      <p class="mt-3 font-mono text-gray-500">
+        <i class="fa-brands fa-apple"></i> macos monterey 12.0+
       </p>
     </div>
-    <br />
   </section>
-  <section class="mt-[-20px] md:mt-[-28px] flex flex-row items-center justify-center">
-    <a href="/download/Macboard.dmg" download>
-      <div
-        class="Poppins poppingButton mb-2 me-3 cursor-pointer rounded-xl bg-gradient-to-r from-[#b385f4] to-[#4f48dd] px-5 py-2 text-center text-lg font-bold text-white hover:bg-gradient-to-br focus:outline-none focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-800"
-      >
-        <i class="fa fa-download" />&nbsp; Download
-      </div>
-    </a>
-    <a href="https://github.com/saumsy/Macboard" target="_blank">
-      <div
-        class="Poppins poppingButton mb-2 me-3 cursor-pointer rounded-2xl border-2 border-violet-600 px-5 py-2 text-center text-lg font-bold text-white hover:bg-gradient-to-br focus:outline-none focus:ring-4 focus:ring-purple-300 dark:focus:ring-purple-800"
-      >
-        <i class="fa fa-github" />&nbsp; Github
-      </div>
-    </a>
-  </section>
-  <p class="text-center">
-    <i class="fa-brands fa-apple" />&nbsp; MacOS Monterey 12.0+
-  </p>
-  <img
-    src="project-assets/macboard-demo.png"
-    alt="Macboard Demo"
-    class="mx-auto mt-5 h-2/3 w-2/3 rounded-3xl"
-  />
 
-  <section class="flex flex-col gap-24 py-32">
-    <div class="flex flex-col gap-2 text-center">
-      <h2 class="Poppins text-3xl">
-        Why <span class="Poppins gradientText text-4xl font-bold">use</span> Macboard?
-      </h2>
-    </div>
+  <div class="my-12">
+    <img
+      src="project-assets/macboard-demo.png"
+      alt="macboard demo"
+      class="mx-auto w-full rounded-xl shadow-lg shadow-accent/10 md:w-5/6"
+    />
+  </div>
 
-    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-      {#each features as card}
-        <Card classes="cursor-auto aspect-[1] lg:w-[350px] mx-auto">
-          <div
-            class="content flex max-w-[20rem] flex-col items-center justify-center gap-3 p-1 text-center"
-          >
+  <section class="my-16">
+    <h2 class="mb-12 font-mono text-2xl text-accent">why use macboard?</h2>
+
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {#each features as feature}
+        <Card>
+          <div class="flex items-center gap-4">
             <div
-              class="border-outline flex aspect-[1] items-center justify-center rounded-xl border border-violet-400 bg-[#9792ff] p-5"
+              class="flex h-12 w-12 items-center justify-center rounded-lg border border-accent/30 bg-darkbg p-3"
             >
-              <img src={card.image} alt={card.title} class="w-10" />
+              <img
+                src={feature.image}
+                alt={feature.title}
+                class="h-6 w-6 brightness-100 invert filter"
+              />
             </div>
-            <div class="">
-              <h1 class="gradientText pl-2 text-2xl font-semibold">
-                {card.title}
-              </h1>
-              <p class="mt-1 pl-2 text-sm opacity-[0.8]">
-                {card.description}
-              </p>
-            </div>
+            <h3 class="font-mono text-accent">
+              {feature.title}
+            </h3>
           </div>
         </Card>
       {/each}
     </div>
   </section>
+
+  <div class="mt-12 pb-4">
+    <a href="/projects" class="font-mono text-gray-500 hover:text-accent">← back to projects</a>
+  </div>
 </main>
