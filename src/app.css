@@ -9,8 +9,8 @@ html {
   z-index: -2;
   height: 100vh;
   width: 100vw;
-  background-color: #000000;
-  background-image: radial-gradient(#ffffff33 1px, #00091d 1px);
+  background-color: #121212;
+  background-image: radial-gradient(#333333 1px, #121212 1px);
   background-size: 20px 20px;
 }
 
@@ -18,119 +18,10 @@ html {
   font-family: "Lato", monospace;
 }
 
-h1,
-h2,
-h3 .poppins {
-  font-family: "Poppins", monospace;
-}
-
-.gradientText {
-  font: "Poppins";
-  background: linear-gradient(to right, #b385f4, #4f48dd);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.wave {
-  animation-name: wave-animation;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
-}
-
 .poppingButton {
   transition: transform 0.2s ease-in-out;
 }
 
 .poppingButton:hover {
-  transform: scale(1.1);
-}
-
-@keyframes wave-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  10% {
-    transform: rotate(14deg);
-  }
-
-  20% {
-    transform: rotate(-8deg);
-  }
-
-  30% {
-    transform: rotate(14deg);
-  }
-
-  40% {
-    transform: rotate(-4deg);
-  }
-
-  50% {
-    transform: rotate(10deg);
-  }
-
-  60% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-.card {
-  overflow: hidden;
-  color: white;
-
-  border: 1px solid #673be0;
-
-  border-radius: var(--rounded);
-
-  @apply relative flex flex-col items-center justify-center gap-5 bg-slate-900 p-4;
-
-  will-change: transform;
-  transition: scale 200ms ease-in-out;
-}
-
-.card.fade::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    rgb(27, 27, 49) 0%,
-    transparent 20%,
-    transparent 80%,
-    rgb(27, 27, 49) 100%
-  );
-  z-index: 1;
-}
-
-.card:hover {
-  scale: 1.05;
-  transform: translate(var(--x), var(--y));
-  box-shadow: 0px 0px 40px rgb(146, 73, 255);
-}
-
-.content {
-  will-change: transform;
-}
-
-.card:hover .content > * {
-  transform: translate(calc(-1 * var(--x)), calc(-1 * var(--y)));
-}
-
-.content-hs {
-  overflow: hidden;
-}
-
-.card .content-hs > * {
-  scale: calc(1 + var(--offset));
+  transform: scale(1.05);
 }

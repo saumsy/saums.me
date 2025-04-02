@@ -1,82 +1,16 @@
 <script lang="ts">
-  import { onMount } from "svelte";
-
   export let classes: string = "";
-  export let rounded: string = "2.5rem";
+  export let rounded: string = "lg";
+  export let onClick = () => {};
 
-  const OFFSET = 0.09;
   let card: HTMLButtonElement;
-
-  const nr: {
-    mousePos?: { x: number; y: number };
-    hover?: boolean;
-    inPhone?: boolean;
-  } = {};
-
-  function updateDimension() {
-    if (nr.inPhone || !card) return;
-
-    const { top, left, width, height } = card.getBoundingClientRect();
-
-    card.style.setProperty("--oX", `${left}px`);
-    card.style.setProperty("--oY", `${top}px`);
-    card.style.setProperty("--oW", `${width}px`);
-    card.style.setProperty("--oH", `${height}px`);
-  }
-
-  function calculatePos() {
-    const oX = parseInt(card.style.getPropertyValue("--oX"));
-    const oY = parseInt(card.style.getPropertyValue("--oY"));
-    const oW = parseInt(card.style.getPropertyValue("--oW"));
-    const oH = parseInt(card.style.getPropertyValue("--oH"));
-
-    return {
-      x:
-        (nr.mousePos!.x - oX - card.offsetWidth / 2) * ((oX + oW / 2) / window.innerWidth) * OFFSET,
-      y:
-        (nr.mousePos!.y - oY - card.offsetHeight / 2) *
-        ((oY + oH / 2) / window.innerHeight) *
-        OFFSET
-    };
-  }
-
-  function onMouseMove(ev: MouseEvent) {
-    nr.mousePos = {
-      x: ev.clientX,
-      y: ev.clientY
-    };
-
-    if (!nr.hover) return;
-
-    const { x, y } = calculatePos();
-
-    card.style.setProperty("--x", `${x}px`);
-    card.style.setProperty("--y", `${y}px`);
-  }
-
-  onMount(async () => {
-    nr.inPhone = window.innerWidth < 768;
-
-    updateDimension();
-
-    card.addEventListener("mousemove", onMouseMove);
-    card.addEventListener("mouseenter", () => (nr.hover = true));
-    card.addEventListener("mouseleave", () => () => {
-      nr.hover = false;
-      card.style.setProperty("--x", `0px`);
-      card.style.setProperty("--y", `0px`);
-    });
-
-    window.addEventListener("resize", updateDimension);
-    window.addEventListener("scroll", updateDimension);
-  });
 </script>
 
 <button
-  on:click
+  type="button"
+  on:click={onClick}
   bind:this={card}
-  class={`${classes} card`}
-  style={`--offset: ${OFFSET}; --rounded: ${rounded}`}
+  class={`${classes} block w-full cursor-default border border-gray-800 bg-[#181818] p-6 text-left transition-all duration-200 hover:border-accent hover:shadow-[0_0_10px_rgba(103,58,183,0.3)] ${rounded === "lg" ? "rounded-lg" : rounded === "md" ? "rounded-md" : rounded === "sm" ? "rounded-sm" : rounded === "xl" ? "rounded-xl" : rounded === "2xl" ? "rounded-2xl" : rounded === "3xl" ? "rounded-3xl" : rounded === "full" ? "rounded-full" : ""}`}
 >
   <slot />
 </button>
