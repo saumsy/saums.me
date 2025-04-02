@@ -1,4 +1,6 @@
 <script>
+  import { MapPin, GraduationCap, MoveRight } from "lucide-svelte";
+
   let stack = [
     "python",
     "go",
@@ -28,11 +30,11 @@
     <h1 class="mb-4 font-mono text-4xl text-white">saums</h1>
 
     <p class="flex items-center gap-1 font-mono text-gray-500">
-      <i class="fa fa-map-marker mr-1"></i> india
+      <MapPin size={14} class="mr-1" /> india
     </p>
 
     <p class="mb-8 mt-2 flex items-center gap-1 font-mono text-gray-500">
-      <i class="fa fa-graduation-cap mr-1"></i> student
+      <GraduationCap size={14} class="mr-1" /> student
     </p>
 
     <p class="text-lg text-gray-300">
@@ -88,8 +90,9 @@
       <a
         href="/projects"
         class="mt-8 inline-flex items-center font-mono text-accent hover:underline"
-        >all projects <span class="ml-1">→</span></a
       >
+        all projects <MoveRight class="ml-1 size-4" />
+      </a>
     </div>
   </section>
 </main>

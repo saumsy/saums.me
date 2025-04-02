@@ -1,5 +1,6 @@
 <script>
   import Card from "../../components/Card.svelte";
+  import { MoveUpRight } from "lucide-svelte";
 
   let projects = [
     {
@@ -71,7 +72,9 @@
         <a href={project.link} target="_blank" class="text-xl group-hover:text-accent"
           >{project.title}</a
         >
-        <a href={project.link} target="_blank" class="text-sm hover:text-accent">↗</a>
+        <a href={project.link} target="_blank" class="text-sm hover:text-accent">
+          <MoveUpRight class="size-4" />
+        </a>
       </div>
       <p class="mt-2 text-gray-300">{project.description}</p>
       <p class="mt-2 font-mono text-gray-500">{project.role}</p>

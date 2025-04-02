@@ -1,5 +1,6 @@
 <script lang="ts">
   import Card from "../../components/Card.svelte";
+  import { Download } from "lucide-svelte";
 
   let features: {
     title: string;
@@ -59,7 +60,7 @@
           <button
             class="rounded-md bg-accent/90 px-4 py-2 font-mono text-white transition-colors hover:bg-accent"
           >
-            <i class="fa fa-download"></i> download
+            <Download size={14} class="mr-1 inline" /> download
           </button>
         </a>
         <a href="https://github.com/saumsy/Macboard" target="_blank">
