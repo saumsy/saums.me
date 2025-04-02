@@ -85,7 +85,7 @@
     </Card>
   {/each}
 
-  <div class="mt-8">
+  <div class="mt-8 pb-4">
     <a href="/" class="font-mono text-gray-500 hover:text-accent">← back home</a>
   </div>
 </main>
