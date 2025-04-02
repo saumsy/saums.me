@@ -17,11 +17,3 @@ html {
 * {
   font-family: "Lato", monospace;
 }
-
-.poppingButton {
-  transition: transform 0.2s ease-in-out;
-}
-
-.poppingButton:hover {
-  transform: scale(1.05);
-}

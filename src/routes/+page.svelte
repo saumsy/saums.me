@@ -43,7 +43,7 @@
   </section>
 
   <section id="stack" class="my-12">
-    <h1 class="mb-4 flex items-center gap-2 font-mono text-2xl text-accent before:content-['*']">
+    <h1 class="mb-4 flex items-center gap-2 font-mono text-2xl text-accent before:content-['>']">
       stack
     </h1>
     <p class="my-4 font-mono text-gray-500">stuff i can use in sleep</p>
@@ -58,7 +58,7 @@
   </section>
 
   <section id="projects" class="mt-12">
-    <h1 class="mb-4 flex items-center gap-2 font-mono text-2xl text-accent before:content-['*']">
+    <h1 class="mb-4 flex items-center gap-2 font-mono text-2xl text-accent before:content-['>']">
       projects
     </h1>
     <p class="mb-6 font-mono text-gray-500">stuff i've built</p>

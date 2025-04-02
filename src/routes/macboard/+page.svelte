@@ -43,7 +43,7 @@
 </svelte:head>
 
 <main>
-  <h1 class="mb-8 flex items-center gap-2 font-mono text-3xl text-accent before:content-['*']">
+  <h1 class="mb-8 flex items-center gap-2 font-mono text-3xl text-accent before:content-['>']">
     macboard
   </h1>
 
