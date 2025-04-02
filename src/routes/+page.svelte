@@ -19,7 +19,7 @@
 <svelte:head>
   <title>saums</title>
   <meta property="og:title" content="saums" />
-  <meta property="og:description" content="a boring developer!" />
+  <meta property="og:description" content="a boring developer" />
   <meta property="og:image" content="https://saums.me/images/saumya-card.png" />
   <meta property="twitter:image" content="https://saums.me/images/saumya-card.png" />
   <meta name="twitter:card" content="summary_large_image" />
