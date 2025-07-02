@@ -13,7 +13,7 @@
     {
       title: "cricket guru",
       description:
-        "relive your favorite sport through the best cricket bot on discord with 44k+ users & 19k+ servers (co-developer)",
+        "relive your favorite sport through the best cricket bot on discord with 46k+ users & 19k+ servers (co-developer)",
       link: "https://cricketguru.pro",
       role: "co-developer",
       tech: ["python", "discord.py", "mongodb"]
