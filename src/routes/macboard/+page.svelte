@@ -15,7 +15,7 @@
       image: "project-assets/feather.svg"
     },
     {
-      title: "details",
+      title: "detailed",
       image: "project-assets/info.svg"
     },
     {
