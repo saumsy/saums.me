@@ -30,7 +30,7 @@
     <h1 class="mb-4 font-mono text-4xl text-white">saums</h1>
 
     <p class="flex items-center gap-1 font-mono text-gray-500">
-      <MapPin size={14} class="mr-1" /> india
+      <MapPin size={14} class="mr-1" /> blr, india
     </p>
 
     <p class="mb-8 mt-2 flex items-center gap-1 font-mono text-gray-500">
